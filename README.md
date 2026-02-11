@@ -15,10 +15,10 @@ https://DITT-LIVE-LÄNK-HÄR
 # 🎯 Syfte  
 Syftet med projektet är att utveckla en **personlig och professionell portfolio** som:
 
-- visar upp mina projekt och min tekniska kompetens  
-- fungerar som ett verktyg i jobbsök och praktikansökningar  
-- demonstrerar min förmåga att bygga moderna, responsiva och interaktiva webbapplikationer  
-- speglar min visuella stil och min utvecklaridentitet  
+- Visar upp mina projekt och min tekniska kompetens  
+- Fungerar som ett verktyg i jobbsök och praktikansökningar  
+- Demonstrerar min förmåga att bygga moderna, responsiva och interaktiva webbapplikationer  
+- Speglar min visuella stil och min utvecklaridentitet  
 
 ---
 
@@ -70,14 +70,23 @@ Syftet med projektet är att utveckla en **personlig och professionell portfolio
 ## 📂 Projektstruktur
 
 /public → statiska filer (PDF, bilder) 
+
 /src 
+
 /assets → bilder och grafik 
+
 /components → React‑komponenter 
+
 /styles → SCSS‑partials och main.scss 
+
 App.jsx → huvudkomponenten 
+
 main.jsx → entry point 
+
 index.html → Vite HTML‑template 
+
 package.json → dependencies & scripts 
+
 vite.config.js → Vite‑konfiguration
 
 ---
@@ -128,12 +137,12 @@ vite.config.js → Vite‑konfiguration
 # 🧠 Reflektion & lärdomar  
 Under projektets gång har jag utvecklat min förmåga att:
 
-- arbeta strukturerat från idé till färdig produkt  
-- skriva ren och skalbar SCSS  
-- bygga moderna gränssnitt med React  
-- skapa interaktivitet och animationer  
-- tänka både som designer och utvecklare  
-- dokumentera mitt arbete professionellt  
+- Arbeta strukturerat från idé till färdig produkt  
+- Skriva ren och skalbar SCSS  
+- Bygga moderna gränssnitt med React  
+- Skapa interaktivitet och animationer  
+- Tänka både som designer och utvecklare  
+- Dokumentera mitt arbete professionellt  
 
 Detta projekt har stärkt min självkänsla som webbutvecklare och gett mig en portfolio jag är stolt över.
 
