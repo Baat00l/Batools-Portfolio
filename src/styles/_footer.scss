@@ -1,0 +1,109 @@
+/* ===========================
+   FOOTER – COMPACT PREMIUM
+=========================== */
+
+.footer {
+  background: rgba(13, 13, 13, 0.85);
+  padding: 20px 0 35px; /* tunnare */
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  position: relative;
+  margin-top: 80px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 0.45fr 1fr; /* mitten ännu smalare */
+  align-items: center;
+  padding: 0 8vw;
+}
+
+
+/* LEFT: COPYRIGHT */
+.footer-copy {
+  font-size: 13px;
+  color: #bfbfbf;
+  text-align: left;
+}
+
+/* CENTER: SOCIAL ICONS */
+.footer-center {
+  display: flex;
+  justify-content: flex-start; /* drar ikonerna åt vänster */
+  gap: 18px;
+  padding-left: 10px; /* finjustering */
+}
+
+
+.social-icon {
+  font-size: 20px;
+  color: $accent;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $accent-soft;
+    text-shadow: 0 0 12px rgba(201, 168, 106, 0.8);
+    transform: translateY(-3px);
+  }
+}
+
+.section {
+  border-bottom: 1px solid rgba(201, 168, 106, 0.15); /* tunn guldig linje */
+  padding-bottom: 100px;
+}
+
+
+/* RIGHT: MENU (ännu mindre) */
+.footer-nav {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+  margin-left: auto; /* trycker menyn ännu mer åt höger */
+  padding-right: 10px; /* liten extra buffert mot kanten */
+
+  a {
+    text-decoration: none;
+    color: $text;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    position: relative;
+    padding-bottom: 3px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: $accent;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: $accent;
+  color: #1a1a1a; /* mörkare pil */
+  border: none;
+  width: 34px; /* mindre cirkel */
+  height: 34px; /* mindre cirkel */
+  border-radius: 50%;
+  font-size: 16px; /* mindre pil */
+  cursor: pointer;
+  box-shadow: 0 8px 20px $shadow-soft;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: $accent-soft;
+    transform: translateY(-3px);
+  }
+}

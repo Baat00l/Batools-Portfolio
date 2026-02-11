@@ -1,0 +1,180 @@
+/* ===========================
+   BLOG – MODERN TIMELINE
+=========================== */
+
+.blog-section {
+  scroll-margin-top: 0px;
+
+  /* Justera avstånd här */
+padding: 10px 8vw 40px;
+
+  background: linear-gradient(135deg, #141414, #0d0d0d);
+  border-radius: 32px;
+  box-shadow: 0 30px 70px $shadow;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.blog-section .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.25),
+    rgba(255,255,255,0.05)
+  );
+}
+
+/* Each event */
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+  padding-left: 30px;
+}
+
+/* DATE + ICON */
+.timeline-date {
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: #dcdcdc;
+  font-size: 14px;
+  opacity: 0.8;
+
+  i {
+    margin-left: 8px;
+    color: $accent;
+    font-size: 16px;
+  }
+}
+
+/* Dot centered on the block */
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: $accent;
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 12px rgba(201,168,106,0.7);
+  z-index: 3;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 8px rgba(201,168,106,0.4); }
+  50% { box-shadow: 0 0 18px rgba(201,168,106,0.9); }
+  100% { box-shadow: 0 0 8px rgba(201,168,106,0.4); }
+}
+
+/* Content block */
+.timeline-content {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 26px 28px 34px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  position: relative;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 55px rgba(0,0,0,0.45);
+  border-color: $accent;
+}
+
+/* Title */
+.timeline-content h4 {
+  font-size: 22px;
+  color: $accent-soft;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.timeline-content p {
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* Extra text */
+.blog-more {
+  margin-top: 14px;
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 15px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Läs mer-knapp */
+.blog-read-more {
+  margin-top: 18px;
+  background: none;
+  border: 1px solid $accent;
+  color: $accent;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+  display: inline-block;
+
+  &:hover {
+    background: $accent;
+    color: $bg;
+  }
+}
+
+/* Visa alla-knapp */
+.blog-show-all {
+  margin: 20px auto 0;
+  display: block;
+  background: none;
+  border: 1px solid $accent;
+  color: $accent;
+  padding: 10px 26px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: $accent;
+    color: $bg;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

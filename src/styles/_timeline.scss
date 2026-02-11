@@ -1,0 +1,45 @@
+/* ===========================
+   TIMELINE
+=========================== */
+.timeline {
+  margin-top: 40px;
+}
+
+.timeline-list {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: $accent;
+  }
+
+  h4 {
+    margin: 4px 0;
+    color: $accent-soft;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: #dcdcdc;
+  }
+}
+
+.timeline-date {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: $accent;
+}

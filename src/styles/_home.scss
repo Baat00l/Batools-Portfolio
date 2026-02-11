@@ -1,0 +1,197 @@
+/* ===========================
+   HOME – PREMIUM UNIQUE HERO
+=========================== */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(135deg, #141414, #0d0d0d);
+  border-radius: 32px;
+padding: 50px 8vw 100px;
+  box-shadow: 0 30px 70px $shadow;
+  position: relative;
+  overflow: hidden;
+
+  /* GOLD BEAM */
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    width: 160%;
+    height: 160%;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(201,168,106,0.08) 40%,
+      rgba(201,168,106,0.12) 60%,
+      transparent 100%
+    );
+    transform: rotate(8deg);
+    pointer-events: none;
+  }
+
+  /* HALO GLOW */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    right: -120px;
+    width: 380px;
+    height: 380px;
+    background: $accent;
+    opacity: 0.18;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+  }
+}
+
+.home-inner {
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===========================
+   TEXT
+=========================== */
+.lead {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 18px;
+  color: #e0e0e0;
+}
+
+.sub {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 10px;
+  color: #bfbfbf;
+}
+
+/* ===========================
+   TYPING ANIMATION
+=========================== */
+.typing {
+  font-size: 48px;
+  font-weight: 700;
+  color: $accent-soft;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid $accent;
+}
+
+.typing span {
+  opacity: 0;
+  display: inline-block;
+  animation: typeLetter 0s forwards;
+}
+
+@for $i from 1 through 20 {
+  .typing.start span:nth-child(#{$i}) {
+    animation-delay: $i * 0.10s;
+  }
+}
+
+@keyframes typeLetter {
+  to { opacity: 1; }
+}
+
+.typing.start span:last-child {
+  animation:
+    typeLetter 0s forwards,
+    bounce 0.6s 1.4s ease-out;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-12px); }
+  70% { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===========================
+   CTA BUTTONS
+=========================== */
+.home-actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: $accent;
+  color: $bg;
+
+  &:hover {
+    background: $accent-soft;
+    transform: translateY(-3px);
+  }
+}
+
+.btn-secondary {
+  border: 1px solid $accent;
+  color: $accent;
+
+  &:hover {
+    background: $accent;
+    color: $bg;
+    transform: translateY(-3px);
+  }
+}
+
+.glow:hover {
+  box-shadow: 0 0 18px rgba(201, 168, 106, 0.7);
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+.social-row {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  color: $accent;
+  transition: 0.25s ease;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(4px);
+
+  &:hover {
+    color: $accent-soft;
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 0 14px rgba(201,168,106,0.5);
+  }
+}

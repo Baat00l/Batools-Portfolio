@@ -1,0 +1,119 @@
+/* ===========================
+   PROJECTS
+=========================== */
+
+#projects {
+  width: 100%;
+  scroll-margin-top: 0px;
+  padding-top: 70px;
+
+  background: linear-gradient(135deg, #141414, #0d0d0d);
+  border-radius: 32px;
+  padding: 50px 8vw 100px;
+  box-shadow: 0 30px 70px $shadow;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Rubrik */
+#projects .section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+/* Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Kort */
+.project-card {
+  background: $bg-soft;
+  padding: 40px 28px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 20px 50px $shadow-soft;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow:
+      0 0 18px rgba(201,168,106,0.45),
+      0 30px 60px rgba(0,0,0,0.45);
+    border: 1px solid rgba(201,168,106,0.55);
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: $accent-soft;
+  }
+
+  p {
+    color: #dcdcdc;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+}
+
+/* Fade-in */
+.fade-in {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Visa mer / Visa mindre-knapp */
+.show-more-btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+
+  margin: 40px auto 0;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+
+  background: none;
+  border: 1px solid $accent;
+  color: $accent;
+  font-weight: 500;
+  transition: 0.3s ease;
+
+  box-shadow: 0 0 12px rgba(201,168,106,0.35);
+
+  &:hover {
+    background: $accent;
+    color: $bg;
+    box-shadow: 0 0 18px rgba(201,168,106,0.7);
+    transform: translateY(-3px);
+  }
+}
+
+.project-photo {
+  width: 100%;
+  aspect-ratio: 5 / 4;   // nästan fyrkantig, men lite bredare
+}
+
+
+
+.project-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+

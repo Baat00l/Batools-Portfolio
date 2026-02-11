@@ -1,0 +1,22 @@
+@import "variables";
+@import "global";
+@import "header";
+@import "sections";
+@import "home";
+@import "about";
+@import "timeline";
+@import "education";
+@import "skills";
+@import "blog";
+@import "services";
+@import "projects";   
+@import "gallery";
+@import "contact";
+@import "animations";
+@import "responsive";
+@import "footer";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; // justera hur mycket ner du vill scrolla
+}

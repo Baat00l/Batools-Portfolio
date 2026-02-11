@@ -1,0 +1,67 @@
+/* ===========================
+   HEADER
+=========================== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 40px;
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  font-size: 22px;        // gör texten större igen
+  font-weight: 700;       // gör den bold som innan
+  color: $accent;         // samma färg som resten av din design
+  text-decoration: none;  // tar bort länk-stil
+  cursor: pointer;
+  transition: 0.25s ease;
+
+  &:hover {
+    color: $accent-soft;
+    text-shadow: 0 0 12px rgba(201,168,106,0.5);
+  }
+}
+
+
+
+.nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: $text;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  position: relative;
+  padding-bottom: 4px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: $accent;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+  }
+}

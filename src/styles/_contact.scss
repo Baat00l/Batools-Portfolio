@@ -1,0 +1,190 @@
+/* ===========================
+   CONTACT
+=========================== */
+
+#contact,
+.contact-section {
+  scroll-margin-top: 0px;
+
+  /* Justera avstånd här */
+  padding: 50px 8vw 40px;   /* top | left/right | bottom */
+
+  background: linear-gradient(135deg, #141414, #0d0d0d);
+  border-radius: 32px;
+  box-shadow: 0 30px 70px $shadow;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+      padding-top: 70px;   // MINDRE avstånd ovanför rubriken
+}
+
+.contact-form { max-width: 360px; }
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* FLOATING LABELS */
+.form-group {
+  position: relative;
+
+  input,
+  textarea {
+    width: 100%;
+    background: #2a2a2a;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: $text;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+      box-shadow: 0 0 12px rgba(201, 168, 106, 0.4);
+    }
+  }
+
+  textarea { height: 120px; resize: none; }
+
+  label {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label,
+  textarea:focus + label,
+  textarea:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 10px;
+    font-size: 11px;
+    color: $accent-soft;
+    background: $bg-soft;
+    padding: 0 6px;
+  }
+}
+
+/* CONTACT INFO */
+.contact-info {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.contact-info h3 { color: $accent-soft; }
+
+.contact-details p {
+  font-size: 15px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dcdcdc;
+
+  strong { color: $accent-soft; }
+}
+
+.icon {
+  font-size: 18px;
+  color: $accent-soft;
+  width: 22px;
+}
+
+/* EMAIL */
+
+/* EMAIL – påverkar INTE social-link eller book-meeting */
+.contact-details a {
+  color: $text;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    color: $accent-soft;
+    border-color: $accent-soft;
+  }
+}
+
+/* LINKEDIN + BOKA MÖTE – CENTRERAD PREMIUM VERSION */
+.social-link,
+.book-meeting {
+  display: block;               // Ligger under varandra
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: $accent-soft;
+  position: relative;
+  border-bottom: none !important;
+  background: none !important;
+  text-align: center;           // ⭐ CENTRERAR texten
+
+  /* Guld-underline animation */
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); // ⭐ Gör underline centrerad
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, $accent, $accent-soft);
+    transition: width 0.4s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+
+/* SUCCESS MESSAGE + GLITTER */
+.form-success {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: rgba(201, 168, 106, 0.15);
+  border-left: 3px solid $accent;
+  border-radius: 8px;
+  color: $accent-soft;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.form-success.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes glitter {
+  0% { box-shadow: 0 0 0px $accent; }
+  50% { box-shadow: 0 0 12px $accent-soft; }
+  100% { box-shadow: 0 0 0px $accent; }
+}
+
+.form-success.glitter {
+  animation: glitter 1.2s ease-in-out 2;
+}
+
+/* CONTACT INFO GLOW */
+.contact-details p:hover {
+  color: $accent-soft;
+  text-shadow: 0 0 8px rgba(201,168,106,0.4);
+  transition: 0.3s ease;
+}

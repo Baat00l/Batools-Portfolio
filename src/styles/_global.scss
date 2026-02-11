@@ -1,0 +1,18 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: $bg;
+  color: $text;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 90px;
+}
