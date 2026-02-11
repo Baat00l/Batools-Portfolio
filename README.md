@@ -1,157 +1,184 @@
-# 🌟 Batool Fahmi – Portfolio  
-En modern, premiumdesignad och animerad portfolio byggd för att visa upp mina projekt, min kompetens och min resa som webbutvecklare.
+🌟 Batool Fahmi – Portfolio
+En modern, premiumdesignad och animerad portfolio byggd i React + Vite, skapad för att visa upp mina projekt, min kompetens och min resa som webbutvecklare.
 
-Detta projekt är mitt **examensarbete** på **TUC Yrkeshögskola**, där jag studerar **Webbutveckling (2024–2026)**.  
-Syftet är att skapa en professionell, genomarbetad och visuellt stark portfolio som representerar min utveckling, mina kunskaper och min framtida karriär inom webbutveckling.
+Detta projekt är mitt examensarbete på TUC Yrkeshögskola, där jag studerar Webbutveckling (2024–2026).
+Målet är att skapa en professionell, genomarbetad och visuellt stark portfolio som representerar min utveckling, mina kunskaper och min framtida karriär inom webbutveckling.
 
----
-
-## 🔗 Live Demo  
-*(Publiceras på Netlify)*  
+🔗 Live Demo
+(Publiceras på Netlify)  
 https://DITT-LIVE-LÄNK-HÄR
 
----
+🎯 Syfte
+Syftet med projektet är att utveckla en personlig och professionell portfolio som:
 
-# 🎯 Syfte med projektet  
-Syftet med projektet är att skapa en **personlig och professionell portfolio** som jag kan använda när jag söker jobb eller praktik.  
-Webbplatsen fungerar som ett samlat bevis på att jag kan:
+visar upp mina projekt och min tekniska kompetens
 
-- planera, designa och utveckla en komplett webbproduktion  
-- arbeta med moderna tekniker och responsiv design  
-- skapa användarvänliga och visuellt tilltalande gränssnitt  
-- dokumentera och genomföra ett projekt på ett strukturerat sätt  
+fungerar som ett verktyg i jobbsök och praktikansökningar
 
----
+demonstrerar min förmåga att bygga moderna, responsiva och interaktiva webbapplikationer
 
-# 👥 Målgrupp  
-- **Arbetsgivare** inom webbutveckling och IT  
-- **Rekryterare** som vill se mina projekt och min kompetens  
-- **Lärare/examinatorer** som bedömer min tekniska och kreativa förmåga  
-- **Samarbetspartners** eller framtida kunder  
+speglar min visuella stil och min utvecklaridentitet
 
----
+👥 Målgrupp
+Arbetsgivare inom webbutveckling och IT
 
-# 🎯 Projektmål  
-- Skapa en modern, responsiv och visuellt konsekvent portfolio  
-- Visa upp projekt från utbildningen och egna initiativ  
-- Presentera min kompetens på ett tydligt och attraktivt sätt  
-- Implementera interaktivitet med JavaScript  
-- Arbeta med SCSS för en professionell kodstruktur  
-- Publicera projektet online med korrekt deployment  
+Rekryterare som vill bedöma min tekniska nivå
 
----
+Lärare/examinatorer som utvärderar mitt examensarbete
 
-## 🚀 Funktioner
+Framtida kunder eller samarbetspartners
 
-- 🎨 **Premium Soft‑Gold UI** – modern, elegant och visuellt konsekvent design  
-- ✨ **Animationer** – fade‑in, floating‑bubbles, image‑float, flip‑cards  
-- 📱 **Responsiv layout** – fungerar på mobil, surfplatta och desktop  
-- 🧭 **Smooth scroll + aktiv menyhighlight**  
-- 🖼️ **Galleri för projekt**  
-- 🧩 **Tjänster‑sektion**  
-- 💬 **Kontaktformulär med success‑meddelande**  
-- 🎭 **Prefixad och ren SCSS‑struktur** (professionell kodstandard)  
-- ⚡ **Optimerad JavaScript‑logik** (scroll, observers, typing‑trigger)
+🎯 Projektmål
+Skapa en modern, responsiv och visuellt konsekvent portfolio
 
----
+Presentera projekt och kompetenser på ett tydligt och attraktivt sätt
 
-## 🛠️ Teknikstack
+Implementera interaktivitet med React och JavaScript
 
-| Teknik | Användning |
-|--------|------------|
-| **HTML5** | Struktur och semantik |
-| **SCSS / CSS3** | Premiumdesign, animationer, layout |
-| **JavaScript (ES6+)** | Interaktivitet, scroll, observers |
-| **Font Awesome** | Ikoner |
-| **Google Fonts – Poppins** | Typografi |
-| **Git & GitHub** | Versionshantering och deployment |
+Strukturera SCSS professionellt med variabler, komponenter och partials
 
----
+Publicera projektet online med korrekt deployment (Netlify)
 
-## 📂 Projektstruktur
+🚀 Funktioner
+🎨 Premium Soft‑Gold UI – elegant, modern och konsekvent design
 
-/images → Bilder och grafik
-/style.css → Kompilerad CSS från SCSS 
-/script.js → Funktionalitet och animationer 
-/index.html → Huvudfilen för portfolion 
-/README.md → Dokumentation
+✨ Animationer – fade‑in, floating‑bubbles, image‑float, flip‑cards
 
----
+📱 Responsiv layout – optimerad för mobil, surfplatta och desktop
 
-## 📸 Sektioner i portfolion
+🧭 Smooth scroll + aktiv menyhighlight
 
-- **Header** – navigering med smooth scroll  
-- **Home** – presentation, bild, CTA‑knappar  
-- **About** – bakgrund, profil, erfarenhet  
-- **Education** – flip‑cards med utbildning  
-- **Skills** – tekniska och personliga kompetenser (floating bubbles)  
-- **Services** – vad jag erbjuder  
-- **Gallery** – projekt  
-- **Contact** – formulär + kontaktuppgifter  
-- **Footer** – sociala länkar och navigation  
+🖼️ Projektgalleri
 
----
+🧩 Tjänster‑sektion
 
-# 🧩 Arbetsprocess & planering  
+💬 Kontaktformulär med feedback‑meddelande
 
-### **1. Planering**
-- Definiera målgrupp och syfte  
-- Skissa layout och struktur  
-- Planera sektioner och innehåll  
+🎭 Modulär SCSS‑struktur (professionell kodstandard)
 
-### **2. Design**
-- Färgtema: soft‑gold + mörk premiumdesign  
-- Typografi: Poppins  
-- Fokus på visuellt djup, skuggor och blur‑effekter  
+⚡ React‑komponenter för tydlig struktur och återanvändbarhet
 
-### **3. Utveckling**
-- HTML‑struktur  
-- SCSS‑design med variabler och komponenter  
-- JavaScript för interaktivitet  
-- Responsiv anpassning  
+🛠️ Teknikstack
+Teknik	Användning
+React (JSX)	Komponentstruktur och interaktivitet
+Vite	Utvecklingsserver och build‑pipeline
+SCSS	Premiumdesign, variabler, animationer
+JavaScript (ES6+)	Logik, scroll, observers
+Font Awesome	Ikoner
+Google Fonts – Poppins	Typografi
+Git & GitHub	Versionshantering och deployment
+📂 Projektstruktur
+Kod
+/public          → statiska filer (PDF, bilder)
+/src
+   /assets       → bilder och grafik
+   /components   → React‑komponenter
+   /styles       → SCSS‑partials och main.scss
+   App.jsx       → huvudkomponenten
+   main.jsx      → entry point
+index.html       → Vite HTML‑template
+package.json     → dependencies & scripts
+vite.config.js   → Vite‑konfiguration
+📸 Sektioner i portfolion
+Header – navigering med smooth scroll
 
-### **4. Testning**
-- Mobil, surfplatta och desktop  
-- Formulär, scroll, animationer  
-- Prestanda och användarvänlighet  
+Home – presentation, CTA‑knappar, profilbild
 
-### **5. Deployment**
-- GitHub  
-- Netlify (live‑version)  
+About – bakgrund, profil, erfarenhet
 
----
+Education – flip‑cards med utbildning
 
-# 🧠 Reflektion & lärdomar  
+Skills – tekniska och personliga kompetenser (floating bubbles)
+
+Services – vad jag erbjuder
+
+Projects/Gallery – projektgalleri
+
+Contact – formulär + kontaktuppgifter
+
+Footer – sociala länkar och navigation
+
+🧩 Arbetsprocess & planering
+1. Planering
+Definiera målgrupp och syfte
+
+Skissa layout och struktur
+
+Planera sektioner och innehåll
+
+2. Design
+Färgtema: soft‑gold + mörk premiumdesign
+
+Typografi: Poppins
+
+Fokus på visuellt djup, skuggor och blur‑effekter
+
+3. Utveckling
+React‑komponenter
+
+SCSS‑design med variabler och partials
+
+JavaScript‑logik för interaktivitet
+
+Responsiv anpassning
+
+4. Testning
+Mobil, surfplatta och desktop
+
+Formulär, scroll, animationer
+
+Prestanda och användarvänlighet
+
+5. Deployment
+GitHub
+
+Netlify (live‑version)
+
+🧠 Reflektion & lärdomar
 Under projektets gång har jag utvecklat min förmåga att:
 
-- arbeta strukturerat från idé till färdig produkt  
-- skriva ren och skalbar SCSS  
-- använda JavaScript för att skapa interaktivitet  
-- bygga responsiva och moderna gränssnitt  
-- tänka som en designer och utvecklare samtidigt  
-- dokumentera mitt arbete professionellt  
+arbeta strukturerat från idé till färdig produkt
+
+skriva ren och skalbar SCSS
+
+bygga moderna gränssnitt med React
+
+skapa interaktivitet och animationer
+
+tänka både som designer och utvecklare
+
+dokumentera mitt arbete professionellt
 
 Detta projekt har stärkt min självkänsla som webbutvecklare och gett mig en portfolio jag är stolt över.
 
----
+🔮 Framtida förbättringar
+Lägga till en blogg/reflektionssektion
 
-# 🔮 Framtida förbättringar  
-- Lägga till en **blogg/reflektionssektion**  
-- Implementera **dark/light mode**  
-- Bygga om projektgalleriet med **React**  
-- Lägga till fler projekt från utbildningen  
-- Förbättra SEO och prestanda ytterligare  
+Implementera dark/light mode
 
----
+Bygga om projektgalleriet med React‑router
 
-## 🧪 Installation (lokalt)
+Lägga till fler projekt från utbildningen
 
-1. Klona projektet:
-   ```bash
-   git clone https://github.com/DITT-REPO-HÄR
+Förbättra SEO och prestanda ytterligare
 
+🧪 Installation & körning (lokalt)
+1. Klona repot
+bash
+git clone https://github.com/Baat00l/Batools-Portfolio.git
 2. Öppna projektet i VS Code
+bash
+cd Batools-Portfolio
+code .
+3. Installera dependencies
+bash
+npm install
+4. Starta utvecklingsservern
+bash
+npm run dev
+5. Öppna projektet i webbläsaren
+Vite visar en lokal URL, t.ex.:
 
-3. Starta en live server (t.ex. via Live Server‑extension)
-
-4. Klart – portfolion körs lokalt
+Kod
+http://localhost:5173/
+Öppna länken — portfolion körs nu lokalt.
