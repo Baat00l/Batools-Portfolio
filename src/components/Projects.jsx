@@ -20,17 +20,20 @@ function Projects() {
       <div className="project-grid">
 
         {/* Första 3 projekten – alltid synliga */}
-    <a
-  href="https://github.com/Baat00l/Laboration-5-React"
-  target="_blank"
-  className="project-card react"
->
-  <div className="project-photo">
-    <img src={reactImg} alt="React projekt" />
-  </div>
-  <h3>React</h3>
-  <p>Modern frontend, komponenter och UI‑tänk.</p>
-</a>
+
+
+           <a
+      href="https://github.com/Baat00l/TDD-TicketBooking"
+      target="_blank"
+      className="project-card tdd extra-project fade-in"
+    >
+      <div className="project-photo">
+        <img src={tddImg} alt="TDD projekt" />
+      </div>
+      <h3>TDD TicketBooking – C#</h3>
+      <p>Backend, logik och testdriven utveckling.</p>
+    </a>
+
 
 <a
   href="https://github.com/Baat00l/Laboration-7-Angular"
@@ -59,17 +62,18 @@ function Projects() {
 {/* Extra projekt – visas bara om showMore är true */}
 {showMore && (
   <>
-    <a
-      href="https://github.com/Baat00l/TDD-TicketBooking"
-      target="_blank"
-      className="project-card tdd extra-project fade-in"
-    >
-      <div className="project-photo">
-        <img src={tddImg} alt="TDD projekt" />
-      </div>
-      <h3>TDD TicketBooking – C#</h3>
-      <p>Backend, logik och testdriven utveckling.</p>
-    </a>
+ 
+     <a
+  href="https://github.com/Baat00l/Laboration-5-React"
+  target="_blank"
+  className="project-card react"
+>
+  <div className="project-photo">
+    <img src={reactImg} alt="React projekt" />
+  </div>
+  <h3>React</h3>
+  <p>Modern frontend, komponenter och UI‑tänk.</p>
+</a>
 
     <a
       href="https://github.com/Baat00l/Movie-seat-booking-Javascript"
