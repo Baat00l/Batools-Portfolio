@@ -36,13 +36,15 @@ function Home() {
     </div>
 
   <div className="social-row">
+    
   <a href="https://www.instagram.com/b4h.mi/" target="_blank" className="social-icon">
   <i className="fa-brands fa-instagram"></i>
 </a>
 
-  <a href="https://github.com/" target="_blank" className="social-icon">
-    <i className="fa-brands fa-github"></i>
-  </a>
+  <a href="https://github.com/Baat00l" className="social-icon" target="_blank">
+            <i className="fab fa-github"></i>
+          </a>
+
   <a href="https://facebook.com/" target="_blank" className="social-icon">
     <i className="fa-brands fa-facebook"></i>
   </a>
