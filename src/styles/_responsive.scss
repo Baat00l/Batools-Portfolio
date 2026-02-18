@@ -1,10 +1,10 @@
 /* ===========================
-   RESPONSIVE – GLOBAL
+   RESPONSIVITET – GLOBAL
 =========================== */
 
 
 /* ============================================
-   max-width: 900px
+   max-width: 900px – tablet / small laptop
 ============================================ */
 @media (max-width: 900px) {
 
@@ -14,69 +14,80 @@
     text-align: center;
   }
 
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+  }
+
   .contact-details p {
     justify-content: center;
   }
 
-  /* FOOTER */
+  /* FOOTER LAYOUT */
   .footer-inner {
     grid-template-columns: 1fr;
-    text-align: center;
     gap: 20px;
+    text-align: center;
+  }
+
+  .footer-copy {
+    text-align: center;
   }
 
   .footer-nav {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
 
-
 /* ============================================
-   max-width: 768px – MAIN MOBILE
+   max-width: 768px – normal mobil
 ============================================ */
 @media (max-width: 768px) {
 
-  /* GLOBAL PADDING */
+  /* GLOBAL SECTION PADDING */
   .section,
   #about,
   #projects,
   #expertise,
   .skills-section,
   .blog-section,
+  .home,
   #contact {
     padding: 60px 20px 80px;
   }
 
-
   /* ===========================
-     HEADER – mindre meny
+     HEADER – mindre meny, mer luft
   ============================ */
   .header {
-    padding: 14px 26px;
+    padding: 14px 24px;
   }
 
   .logo {
-    margin-right: 18px;
+    margin-right: 12px;
   }
 
   .nav ul {
-    gap: 8px;
+    display: flex;
+    gap: 10px;
   }
 
   .nav a {
     font-size: 10px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
   }
 
 
   /* ===========================
-     ABOUT – två rader titel
+     ABOUT – två rader titel + bilder under
   ============================ */
-  #about h2 {
-    text-align: center;
+  #about h2,
+  .about-title {
     max-width: 260px;
     margin: 0 auto;
+    text-align: center;
     line-height: 1.3;
   }
 
@@ -85,14 +96,17 @@
     gap: 30px;
   }
 
-
-  /* ===========================
-     EDUCATION – centrerad rubrik + kort
-  ============================ */
-  #education h2 {
-    text-align: center;
+  .about-images {
+    grid-template-areas:
+      "large"
+      "small1"
+      "small2";
   }
 
+
+  /* ===========================
+     EDUCATION – flip cards centrerade i kolumn
+  ============================ */
   .education-grid {
     display: flex;
     flex-direction: column;
@@ -103,20 +117,18 @@
   .flip-card {
     width: 90%;
     margin: 0 auto;
-    height: 240px;
-  }
-
-  .flip-card-front,
-  .flip-card-back {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    height: 230px;
   }
 
 
   /* ===========================
-     BLOG – prick under vänster prick
+     BLOG – original design, centrerad
   ============================ */
+  .blog-section .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
   .timeline {
     max-width: 90%;
     margin: 0 auto;
@@ -130,6 +142,10 @@
   }
 
   .timeline-date {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -137,7 +153,7 @@
   .timeline-dot {
     left: 50%;
     transform: translateX(-50%);
-    top: 14px; /* UNDER vänster prick */
+    top: -22px; /* flyttad upp så den inte hamnar på text */
   }
 
   .timeline-content {
@@ -145,50 +161,54 @@
     padding: 22px 20px 28px;
   }
 
+  .blog-read-more,
+  .blog-show-all {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
 
   /* ===========================
-     SERVICES – swipe + shadow + pil-knapp
+     SERVICES – swipe med pil under
   ============================ */
   .service-list {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     position: relative;
   }
 
   .service-bubble {
     min-width: 90%;
     scroll-snap-align: center;
-    padding-top: 40px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* shadow synlig */
+    padding-top: 40px; /* ser till att hela kortet syns */
   }
 
-  .service-swipe-btn {
+  .service-list::after {
+    content: "Swipe ›";
+    font-size: 14px;
+    color: $accent;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: $accent;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    cursor: pointer;
-    border: none;
+    bottom: 8px;
+    left: 0;
   }
 
 
   /* ===========================
-     PROJECTS – swipe + shadow + knappar under
+     PROJECTS – samma swipe som services
   ============================ */
   .project-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     position: relative;
   }
 
@@ -196,26 +216,26 @@
     min-width: 90%;
     scroll-snap-align: center;
     padding-top: 40px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
 
-  .project-swipe-btn {
+  .project-grid::after {
+    content: "Swipe ›";
+    font-size: 14px;
+    color: $accent;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: $accent;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    cursor: pointer;
-    border: none;
+    bottom: 8px;
+    left: 0;
   }
 
-  .show-more-btn {
-    margin: 20px auto 0;
-    display: block;
+
+  /* ===========================
+     SKILLS
+  ============================ */
+  .skills-bubbles {
+    gap: 14px;
   }
 
 
@@ -225,32 +245,57 @@
   .scroll-top {
     position: relative;
     margin: 20px auto 0;
-    display: block;
     right: 0;
     bottom: 0;
+    display: block;
   }
 }
 
 
-
 /* ============================================
-   max-width: 480px – SMALL MOBILE
+   max-width: 480px – small mobile
 ============================================ */
 @media (max-width: 480px) {
+
+  /* HEADER finjustering */
+  .header {
+    padding: 12px 18px;
+  }
+
+  .nav ul {
+    gap: 8px;
+  }
 
   .nav a {
     font-size: 9px;
   }
 
-  .nav ul {
-    gap: 6px;
+  /* HOME */
+  .typing {
+    font-size: 30px;
   }
 
+  .home-actions {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* ABOUT bilder */
+  .about-photo.large {
+    height: 180px;
+  }
+
+  .about-photo.small {
+    height: 120px;
+  }
+
+  /* SERVICES / PROJECTS padding */
   .service-bubble,
   .project-card {
-    padding: 26px 16px;
+    padding: 28px 18px;
   }
 
+  /* FOOTER pil storlek */
   .scroll-top {
     width: 32px;
     height: 32px;
