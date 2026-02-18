@@ -11,7 +11,7 @@
   .nav ul {
     display: none;
     flex-direction: column;
-    background: white;
+    background: var(--header-bg, white); /* samma tema som header */
     position: absolute;
     top: 60px;
     right: 20px;
@@ -28,7 +28,7 @@
 
   /* Hamburgermenyn */
   .menu-icon {
-    width: 28px;
+    width: 30px;
     height: 22px;
     display: flex;
     flex-direction: column;
@@ -38,13 +38,13 @@
 
   .menu-icon span {
     height: 3px;
-    background: black;
+    background: var(--text-color, black); /* samma färg som texten i header */
     border-radius: 3px;
     width: 100%;
     transition: 0.3s;
   }
 
-  /* Animation när aktiv */
+  /* Animation till X */
   .menu-icon.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -56,8 +56,12 @@
   .menu-icon.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
-}
 
+  /* Dölj desktop-menyn helt */
+  .nav {
+    position: relative;
+  }
+}
 
 
 /* ============================================
