@@ -1,7 +1,6 @@
 /* ===========================
    RESPONSIVITET – GLOBAL
 =========================== */
-
 /* ===========================
    HAMBURGER MENU – MOBILE
 =========================== */
@@ -11,13 +10,14 @@
   .nav ul {
     display: none;
     flex-direction: column;
-    background: var(--header-bg, white); /* samma tema som header */
+    background: #000; /* svart bakgrund */
+    border: 1px solid #d4af37; /* guld kant */
     position: absolute;
     top: 60px;
     right: 20px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     z-index: 999;
   }
 
@@ -28,17 +28,18 @@
 
   /* Hamburgermenyn */
   .menu-icon {
-    width: 30px;
-    height: 22px;
+    width: 32px;
+    height: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
   }
 
+  /* Guldiga streck */
   .menu-icon span {
     height: 3px;
-    background: var(--text-color, black); /* samma färg som texten i header */
+    background: #d4af37; /* guld */
     border-radius: 3px;
     width: 100%;
     transition: 0.3s;
@@ -46,7 +47,7 @@
 
   /* Animation till X */
   .menu-icon.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
 
   .menu-icon.active span:nth-child(2) {
@@ -54,7 +55,7 @@
   }
 
   .menu-icon.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
   }
 
   /* Dölj desktop-menyn helt */
