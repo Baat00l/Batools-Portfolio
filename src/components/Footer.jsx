@@ -1,24 +1,7 @@
-import { useEffect } from "react";
+import { useState } from "react";
 
 function Footer() {
-
-  useEffect(() => {
-    const footerMenuIcon = document.querySelector('.footer-menu-icon');
-    const footerMenu = document.querySelector('.footer-menu');
-
-    if (footerMenuIcon && footerMenu) {
-      footerMenuIcon.addEventListener('click', () => {
-        footerMenuIcon.classList.toggle('active');
-        footerMenu.classList.toggle('active');
-      });
-    }
-
-    return () => {
-      if (footerMenuIcon) {
-        footerMenuIcon.replaceWith(footerMenuIcon.cloneNode(true));
-      }
-    };
-  }, []);
+  const [footerMenuOpen, setFooterMenuOpen] = useState(false);
 
   return (
     <footer className="footer">
@@ -38,22 +21,25 @@ function Footer() {
           </a>
         </div>
 
-        {/* FOOTER MENY IKON */}
-        <div className="footer-menu-icon">
+        {/* FOOTER MENU ICON */}
+        <div
+          className={`footer-menu-icon ${footerMenuOpen ? "active" : ""}`}
+          onClick={() => setFooterMenuOpen(!footerMenuOpen)}
+        >
           <span></span>
           <span></span>
           <span></span>
         </div>
 
-        {/* FOOTER MENY LISTA */}
-        <nav className="footer-menu">
+        {/* FOOTER MENU LIST */}
+        <nav className={`footer-menu ${footerMenuOpen ? "active" : ""}`}>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick={() => setFooterMenuOpen(false)}>Home</a></li>
+            <li><a href="#about" onClick={() => setFooterMenuOpen(false)}>About</a></li>
+            <li><a href="#blog" onClick={() => setFooterMenuOpen(false)}>Blog</a></li>
+            <li><a href="#expertise" onClick={() => setFooterMenuOpen(false)}>Expertise</a></li>
+            <li><a href="#projects" onClick={() => setFooterMenuOpen(false)}>Projects</a></li>
+            <li><a href="#contact" onClick={() => setFooterMenuOpen(false)}>Contact</a></li>
           </ul>
         </nav>
 
