@@ -1,6 +1,7 @@
 /* ===========================
    HEADER
 =========================== */
+
 .header {
   position: fixed;
   top: 0;
@@ -8,32 +9,38 @@
   padding: 18px 40px;
   background: rgba(13, 13, 13, 0.85);
   backdrop-filter: blur(12px);
+  z-index: 200;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* FLEX-CONTAINER FÖR LOGO + MENY */
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 200;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  
-
+  width: 100%;
 }
 
-
+/* LOGO */
 .logo {
-  font-size: 22px;        // gör texten större igen
-  font-weight: 700;       // gör den bold som innan
-  color: $accent;         // samma färg som resten av din design
-  text-decoration: none;  // tar bort länk-stil
+  font-size: 22px;
+  font-weight: 700;
   cursor: pointer;
   transition: 0.25s ease;
-
-  &:hover {
-    color: $accent-soft;
-    text-shadow: 0 0 12px rgba(201,168,106,0.5);
-  }
 }
 
+/* VIKTIGT: STYLA LÄNKEN INUTI LOGON */
+.logo a {
+  color: $accent !important;   /* ← FIXAR LILA PROBLEMET */
+  text-decoration: none;
+}
 
+.logo a:hover {
+  color: $accent-soft;
+  text-shadow: 0 0 12px rgba(201,168,106,0.5);
+}
 
+/* NAVIGATION */
 .nav ul {
   display: flex;
   gap: 28px;
