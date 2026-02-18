@@ -1,26 +1,43 @@
+import { useEffect } from "react";
+
 function Header() {
+
+  useEffect(() => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav');
+
+    if (menuIcon && nav) {
+      menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    }
+
+    return () => {
+      if (menuIcon) {
+        menuIcon.replaceWith(menuIcon.cloneNode(true));
+      }
+    };
+  }, []);
+
   return (
     <header className="header">
-      <a href="#home" className="logo">Batools Portfolio</a>
+      <div className="logo">Batool</div>
 
-      
-
-<div class="menu-icon">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-
+      <div className="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <nav className="nav">
         <ul>
-          <li><a href="#home" className="nav-link">Home</a></li>
-          <li><a href="#about" className="nav-link">About</a></li>
-          <li><a href="#blog" className="nav-link">Blog</a></li>
-<li><a href="#expertise" className="nav-link">Expertise</a></li>
-          <li><a href="#projects" className="nav-link">Projects</a></li>
-          <li><a href="#contact" className="nav-link">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>

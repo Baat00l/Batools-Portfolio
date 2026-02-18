@@ -1,4 +1,25 @@
+import { useEffect } from "react";
+
 function Footer() {
+
+  useEffect(() => {
+    const footerMenuIcon = document.querySelector('.footer-menu-icon');
+    const footerMenu = document.querySelector('.footer-menu');
+
+    if (footerMenuIcon && footerMenu) {
+      footerMenuIcon.addEventListener('click', () => {
+        footerMenuIcon.classList.toggle('active');
+        footerMenu.classList.toggle('active');
+      });
+    }
+
+    return () => {
+      if (footerMenuIcon) {
+        footerMenuIcon.replaceWith(footerMenuIcon.cloneNode(true));
+      }
+    };
+  }, []);
+
   return (
     <footer className="footer">
       <div className="footer-inner">
