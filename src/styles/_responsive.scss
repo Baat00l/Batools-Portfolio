@@ -2,6 +2,63 @@
    RESPONSIVITET – GLOBAL
 =========================== */
 
+/* ===========================
+   HAMBURGER MENU – MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+  /* Dölj vanliga menyn */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 999;
+  }
+
+  /* Visa menyn när aktiv */
+  .nav.active ul {
+    display: flex;
+  }
+
+  /* Hamburgermenyn */
+  .menu-icon {
+    width: 28px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    height: 3px;
+    background: black;
+    border-radius: 3px;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  /* Animation när aktiv */
+  .menu-icon.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+
 
 /* ============================================
    max-width: 900px – tablet / small laptop

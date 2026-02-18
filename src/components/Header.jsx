@@ -3,6 +3,14 @@ function Header() {
     <header className="header">
       <a href="#home" className="logo">Batools Portfolio</a>
 
+
+      <div class="menu-icon">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
       <nav className="nav">
         <ul>
           <li><a href="#home" className="nav-link">Home</a></li>
