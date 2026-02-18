@@ -106,7 +106,7 @@
 /* ============================================
    max-width: 768px – normal mobil
 ============================================ */
-@media (max-width: 768px) 
+@media (max-width: 768px) {
 
   /* GLOBAL SECTION PADDING */
   .section,
@@ -140,6 +140,8 @@
     font-size: 10px;
     letter-spacing: 0.04em;
   }
+
+} 
 
 
   /* ===========================
