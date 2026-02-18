@@ -8,13 +8,13 @@
 
   /* Dölj menyn helt tills man trycker */
   .nav ul {
-    display: none;
+    display: none;              /* <-- GÖR ATT DEN INTE SYNS */
     flex-direction: column;
-    background: #000; /* svart bakgrund */
-    border: 1px solid #d4af37; /* guld kant */
+    background: #000;           /* svart bakgrund */
+    border: 1px solid #d4af37;  /* guld kant */
     position: absolute;
     top: 60px;
-    right: 10px; /* MER ÅT HÖGER */
+    right: 5px;                 /* MER ÅT HÖGER */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
@@ -23,7 +23,7 @@
 
   /* Visa menyn när aktiv */
   .nav.active ul {
-    display: flex;
+    display: flex;              /* <-- VISAS ENDAST VID TRYCK */
   }
 
   /* Hamburgermenyn */
@@ -34,19 +34,19 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin-left: auto; /* FLYTTAR IKONEN TILL HÖGER */
+    margin-left: auto;          /* <-- FLYTTAR IKONEN TILL HÖGER */
   }
 
   /* Guldiga streck */
   .menu-icon span {
     height: 3px;
-    background: #d4af37; /* guld */
+    background: #d4af37;        /* guld */
     border-radius: 3px;
     width: 100%;
     transition: 0.3s;
   }
 
-  /* Animation till X */
+  /* X-animation */
   .menu-icon.active span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
