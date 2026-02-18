@@ -169,6 +169,11 @@
   /* ===========================
      EDUCATION – flip cards centrerade i kolumn
   ============================ */
+
+   .education-section .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
   .education-grid {
     display: flex;
     flex-direction: column;
@@ -301,15 +306,59 @@
   }
 
 
-  /* ===========================
-     FOOTER – pil under ikonerna
-  ============================ */
-  .scroll-top {
-    position: relative;
-    margin: 20px auto 0;
-    right: 0;
-    bottom: 0;
-    display: block;
+/* ===========================
+   FOOTER MENU – MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+  /* Dölj footermeny-listan tills man trycker */
+  .footer-menu ul {
+    display: none;
+    flex-direction: column;
+    background: #000;              /* svart */
+    border: 1px solid #d4af37;     /* guld */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  /* Visa när aktiv */
+  .footer-menu.active ul {
+    display: flex;
+  }
+
+  /* Footer hamburgermeny */
+  .footer-menu-icon {
+    width: 32px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0 auto;                /* centrerad */
+  }
+
+  .footer-menu-icon span {
+    height: 3px;
+    background: #d4af37;           /* guld */
+    border-radius: 3px;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  /* X-animation */
+  .footer-menu-icon.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .footer-menu-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .footer-menu-icon.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
   }
 }
 
