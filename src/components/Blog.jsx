@@ -38,7 +38,7 @@ function Blog() {
 
           <div className="timeline-content">
             <h4>Min utveckling</h4>
-            <p>Jag har förfinat min förmåga att skriva ren, strukturerad och hållbar kod samt att 
+            <p>Jag har förfinat min förmåga att skriva strukturerad och hållbar kod samt att 
               organisera projekt på ett professionellt och skalbart sätt.</p>
 
             {open1 && (
@@ -95,15 +95,15 @@ function Blog() {
 
           <div className="timeline-content">
             <h4>Framtida mål</h4>
-            <p>Fördjupning inom React och backend står i fokus, 
-              tillsammans med ambitionen att bygga mer avancerade och skalbara applikationer.</p>
+   <p>
+Fokus ligger nu på att bredda perspektivet och ta sig an projekt som kräver mer helhetstänk, 
+struktur och kreativ problemlösning.</p>
 
-            {open3 && (
-              <p className="blog-more">
-                Målet är att utveckla kompletta system med både frontend och backend, 
-                samtidigt som mer avancerade UI‑komponenter och interaktiva upplevelser skapas
-                för att höja både funktionalitet och användarupplevelse.
-              </p>
+{open3 && (
+<p className="blog-more">
+Ambitionen är att skapa lösningar som inte bara fungerar, utan känns genomarbetade i 
+varje detalj — från idé och logik till upplevelse och uttryck. Det handlar om att växa i 
+både bredd och djup, och låta varje nytt projekt bli ett steg mot en ännu starkare helhet.</p>
             )}
 
             <button className="blog-read-more" onClick={() => setOpen3(!open3)}>

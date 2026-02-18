@@ -13,7 +13,9 @@ function Skills() {
     <span class="bubble">Grundläggande & fördjupad programmering</span>
     <span class="bubble">Design & UX</span>
     <span class="bubble">Next.js</span>
+    <span class="bubble">C#</span>
     <span class="bubble">Agila metoder</span>
+    <span class="bubble">Publiceringsverktyg</span>
     <span class="bubble">Github</span>
     <span class="bubble">Anpassningsförmåga</span>
     <span class="bubble">Empati</span>

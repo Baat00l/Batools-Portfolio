@@ -25,9 +25,10 @@ function About() {
 
           <h3>Personlig profil</h3>
           <p>
-En ambitiös och målinriktad person som drivs av en genuin vilja att växa,
- lära och skapa. Kommunikation, problemlösning och utveckling är inte bara styrkor, 
-utan något som kommer naturligt och byggs på för varje nytt steg framåt.        
+En nyfiken och målmedveten person som älskar att utvecklas,
+ lösa problem och skapa något som känns meningsfullt. Kommunikation och kreativt tänkande 
+ kommer naturligt för mig, och varje steg framåt bygger vidare på min drivkraft
+  att alltid bli bättre.     
 </p>
 
           <div className="about-facts-grid">
@@ -121,7 +122,7 @@ utan något som kommer naturligt och byggs på för varje nytt steg framåt.
             </div>
             <div className="flip-back">
               <h4>Västra Engelbrektsskolan</h4>
-              <p>Allmän grundskoleutbildning från årskurs 6–9 med en bred kunskapsbas
+              <p>Allmän grundskoleutbildning från årskurs 6-9 med en bred kunskapsbas
                  i alla centrala ämnen.</p>
             </div>
           </div>

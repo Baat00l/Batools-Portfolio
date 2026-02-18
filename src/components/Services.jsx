@@ -41,7 +41,7 @@ function Services() {
 
           {open2 && (
             <p className="more-text">
-           Visuellt engagerande gränssnitt med genomtänkta animationer, mikrointeraktioner 
+           Visuellt engagerande gränssnitt med genomtänkta animationer 
            och en premium‑design som ger varje webbplats en unik och minnesvärd känsla.
             Skapade med omsorg, kreativitet och en tydlig känsla för detaljer.
             </p>
