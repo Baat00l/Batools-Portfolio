@@ -4,17 +4,22 @@
 /* ===========================
    HAMBURGER MENU – MOBILE
 =========================== */
+/* Dölj mobilmenyn som standard */
+.nav ul {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
   /* Dölj menyn helt tills man trycker */
   .nav ul {
-    display: none;              /* <-- GÖR ATT DEN INTE SYNS */
+    display: none !important;   /* <-- GÖR ATT DEN INTE SYNS */
     flex-direction: column;
     background: #000;           /* svart bakgrund */
     border: 1px solid #d4af37;  /* guld kant */
     position: absolute;
     top: 60px;
-    right: 5px;                 /* MER ÅT HÖGER */
+    right: 5px;                 /* mer åt höger */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
@@ -23,7 +28,7 @@
 
   /* Visa menyn när aktiv */
   .nav.active ul {
-    display: flex;              /* <-- VISAS ENDAST VID TRYCK */
+    display: flex !important;   /* <-- VISAS ENDAST VID TRYCK */
   }
 
   /* Hamburgermenyn */
@@ -34,7 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin-left: auto;          /* <-- FLYTTAR IKONEN TILL HÖGER */
+    margin-left: auto;          /* flyttar ikonen till höger */
   }
 
   /* Guldiga streck */
@@ -59,7 +64,6 @@
     transform: translateY(-10px) rotate(-45deg);
   }
 }
-
 
 /* ============================================
    max-width: 900px – tablet / small laptop
