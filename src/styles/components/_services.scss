@@ -127,3 +127,101 @@
   from { opacity: 0; transform: translateY(5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===========================
+      RESPONSIVE – SERVICES
+=========================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  #expertise {
+    padding: 50px 6vw 90px;
+  }
+
+  .service-list {
+    gap: 30px;
+  }
+
+  .service-bubble {
+    padding: 32px 24px;
+  }
+
+  .service-bubble .icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-bubble .icon i {
+    font-size: 28px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  #expertise {
+    padding: 40px 5vw 70px;
+    border-radius: 28px;
+  }
+
+  .service-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+    gap: 22px;
+    justify-items: center; /* gör att tredje hamnar i mitten */
+  }
+
+  .service-bubble {
+    padding: 28px 20px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 260px; /* håller layouten snygg */
+  }
+
+  .service-bubble .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-bubble .icon i {
+    font-size: 26px;
+  }
+
+  .service-bubble h3 {
+    font-size: 18px;
+  }
+
+  .service-bubble p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .read-more {
+    font-size: 13px;
+    padding: 7px 16px;
+  }
+}
+
+/* Extra liten mobil */
+@media (max-width: 480px) {
+  .service-list {
+    grid-template-columns: 1fr; /* 1 kolumn */
+    justify-items: center;
+  }
+
+  .service-bubble {
+    max-width: 300px;
+    padding: 24px 18px;
+  }
+
+  .service-bubble .icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .service-bubble .icon i {
+    font-size: 24px;
+  }
+
+  .service-bubble h3 {
+    font-size: 17px;
+  }
+}

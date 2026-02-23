@@ -80,3 +80,58 @@
 .bubble:nth-child(7) { animation-delay: 1.8s; }
 .bubble:nth-child(8) { animation-delay: 2.1s; }
 .bubble:nth-child(9) { animation-delay: 2.4s; }
+
+/* ===========================
+      RESPONSIVE – SKILLS
+=========================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .skills-section {
+    padding: 50px 6vw 90px;
+  }
+
+  .skills-bubbles {
+    gap: 16px;
+  }
+
+  .bubble {
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 40px 5vw 70px;
+    border-radius: 28px;
+  }
+
+  .skills-bubbles {
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  .bubble {
+    padding: 12px 20px;
+    font-size: 13px;
+    border-radius: 999px;
+  }
+
+  .skills-section .section-header {
+    margin-bottom: 30px;
+  }
+}
+
+/* Extra liten mobil */
+@media (max-width: 480px) {
+  .skills-bubbles {
+    gap: 12px;
+  }
+
+  .bubble {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+}

@@ -182,3 +182,32 @@ padding: 10px 8vw 40px;
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===========================
+   RESPONSIVE FIX – TIMELINE DATE
+=========================== */
+
+/* Mobil */
+@media (max-width: 768px) {
+  .timeline-date {
+    left: -45px;        /* närmare linjen */
+    font-size: 12px;    /* mindre text */
+    opacity: 0.85;
+  }
+
+  .timeline-date i {
+    font-size: 14px;    /* mindre ikon */
+  }
+}
+
+/* Extra liten mobil */
+@media (max-width: 480px) {
+  .timeline-date {
+    left: -38px;        /* ännu närmare */
+    font-size: 11px;    /* ännu lite mindre */
+  }
+
+  .timeline-date i {
+    font-size: 13px;
+  }
+}

@@ -191,3 +191,106 @@
   text-shadow: 0 0 8px rgba(201,168,106,0.4);
   transition: 0.3s ease;
 }
+
+/* ===========================
+      RESPONSIVE – CONTACT
+=========================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  #contact,
+  .contact-section {
+    padding: 50px 6vw 70px;
+  }
+
+  .contact {
+    gap: 40px;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 340px;
+  }
+
+  .contact-details p {
+    font-size: 14px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  #contact,
+  .contact-section {
+    padding: 40px 5vw 60px;
+    border-radius: 28px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr; /* 1 kolumn */
+    gap: 40px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .form {
+    gap: 16px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .contact-details p {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 16px;
+    width: 20px;
+  }
+
+  .social-link,
+  .book-meeting {
+    font-size: 14px;
+  }
+}
+
+/* Extra liten mobil */
+@media (max-width: 480px) {
+  .contact {
+    gap: 32px;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 300px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 9px 10px;
+  }
+
+  .contact-details p {
+    font-size: 13px;
+  }
+
+  .social-link,
+  .book-meeting {
+    font-size: 13px;
+  }
+}

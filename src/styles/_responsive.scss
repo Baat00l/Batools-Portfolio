@@ -1,62 +1,25 @@
 /* ===========================
-   RESPONSIVITET
+   GLOBAL RESPONSIVITET
 =========================== */
 
-@media (max-width: 900px) {
-  .contact {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .contact-form,
-  .contact-info {
-    max-width: 100%;
-  }
-
-  .contact-details p {
-    justify-content: center;
-  }
-
-  .footer-inner {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .footer-copy {
-    text-align: center;
-  }
-
-  .footer-nav {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
+/* Tablet & Mobil – generella sektioner */
 @media (max-width: 768px) {
   .section {
     padding: 80px 20px;
   }
 
+  /* Education fallback (din riktiga responsivitet ligger i education.scss) */
   .education-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Services */
   .services .service-list {
     grid-template-columns: 1fr;
   }
 
+  /* Gallery */
   .gallery .project-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav ul {
-    display: none;
-  }
-
-  .typing {
-    font-size: 32px;
   }
 }

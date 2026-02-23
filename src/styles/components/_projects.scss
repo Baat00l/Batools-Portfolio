@@ -121,3 +121,89 @@
   border-radius: 20px;
 }
 
+/* ===========================
+      RESPONSIVE – PROJECTS
+=========================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  #projects {
+    padding: 50px 6vw 90px;
+  }
+
+  .project-grid {
+    gap: 30px;
+  }
+
+  .project-card {
+    padding: 32px 24px;
+  }
+
+  .project-card h3 {
+    font-size: 19px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  #projects {
+    padding: 40px 5vw 70px;
+    border-radius: 28px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+    gap: 22px;
+    justify-items: center; /* centrerar tredje kortet */
+  }
+
+  .project-card {
+    padding: 28px 20px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 260px; /* håller layouten snygg */
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .show-more-btn {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+
+  .project-photo {
+    aspect-ratio: 5 / 4;
+  }
+}
+
+/* Extra liten mobil */
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 kolumn */
+    justify-items: center;
+  }
+
+  .project-card {
+    max-width: 300px;
+    padding: 24px 18px;
+  }
+
+  .project-card h3 {
+    font-size: 17px;
+  }
+
+  .project-photo {
+    aspect-ratio: 4 / 3; /* lite högre för små skärmar */
+  }
+}
