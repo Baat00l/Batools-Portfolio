@@ -2,6 +2,7 @@
    FOOTER – COMPACT PREMIUM
 =========================== */
 
+
 .footer {
   background: rgba(13, 13, 13, 0.85);
   padding: 20px 0 35px; /* tunnare */
@@ -13,7 +14,7 @@
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 0.45fr 1fr; /* mitten ännu smalare */
+  grid-template-columns: 1fr 0.45fr 1fr; 
   align-items: center;
   padding: 0 8vw;
 }
@@ -29,9 +30,9 @@
 /* CENTER: SOCIAL ICONS */
 .footer-center {
   display: flex;
-  justify-content: flex-start; /* drar ikonerna åt vänster */
+  justify-content: flex-start; 
   gap: 18px;
-  padding-left: 10px; /* finjustering */
+  padding-left: 10px; 
 }
 
 
@@ -48,18 +49,18 @@
 }
 
 .section {
-  border-bottom: 1px solid rgba(201, 168, 106, 0.15); /* tunn guldig linje */
+  border-bottom: 1px solid rgba(201, 168, 106, 0.15);
   padding-bottom: 100px;
 }
 
 
-/* RIGHT: MENU (ännu mindre) */
+/* RIGHT: MENU */
 .footer-nav {
   display: flex;
   gap: 14px;
   justify-content: flex-end;
-  margin-left: auto; /* trycker menyn ännu mer åt höger */
-  padding-right: 10px; /* liten extra buffert mot kanten */
+  margin-left: auto;
+  padding-right: 10px; 
 
   a {
     text-decoration: none;
@@ -92,12 +93,12 @@
   bottom: 22px;
   right: 22px;
   background: $accent;
-  color: #1a1a1a; /* mörkare pil */
+  color: #1a1a1a; 
   border: none;
-  width: 34px; /* mindre cirkel */
-  height: 34px; /* mindre cirkel */
+  width: 34px; 
+  height: 34px; 
   border-radius: 50%;
-  font-size: 16px; /* mindre pil */
+  font-size: 16px; 
   cursor: pointer;
   box-shadow: 0 8px 20px $shadow-soft;
   transition: 0.3s ease;
@@ -114,7 +115,7 @@
 
 .footer {
   background: rgba(13, 13, 13, 0.85);
-  padding: 20px 0 35px; /* tunnare */
+  padding: 20px 0 35px; 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   position: relative;
@@ -123,7 +124,7 @@
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 0.45fr 1fr; /* mitten ännu smalare */
+  grid-template-columns: 1fr 0.45fr 1fr; 
   align-items: center;
   padding: 0 8vw;
 }
@@ -605,13 +606,13 @@
     font-size: 11px;
   }
 
-  /* ⭐ KORREKT MOBILPOSITION – längre åt höger */
+  /*  MOBILPOSITION  */
   .scroll-top {
     width: 32px;
     height: 32px;
     font-size: 15px;
     bottom: 18px;
-    right: 10px; /* ✔️ flyttad närmare kanten, längre från Contact */
+    right: 10px; 
   }
 }
 
@@ -637,12 +638,12 @@
     font-size: 10px;
   }
 
-  /* ⭐ EXTRA LITEN MOBIL – ännu lite mer åt höger */
+  /* EXTRA LITEN MOBIL  */
   .scroll-top {
     width: 30px;
     height: 30px;
     font-size: 14px;
     bottom: 16px;
-    right: 8px; /* ✔️ perfekt balans på små skärmar */
+    right: 8px; 
   }
 }

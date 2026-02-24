@@ -1,6 +1,8 @@
 /* ===========================
    ANIMATIONER
 =========================== */
+
+/* Fade-in sektioner */
 .fade-section {
   opacity: 0;
   transform: translateY(40px);
@@ -12,6 +14,7 @@
   transform: translateY(0);
 }
 
+/* Staggered fade */
 .stagger > * {
   opacity: 0;
   transform: translateY(20px);
@@ -30,6 +33,7 @@
   }
 }
 
+/* Bildanimation */
 .image-animate {
   opacity: 0;
   transform: translateY(40px) scale(0.9);

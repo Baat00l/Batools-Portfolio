@@ -20,8 +20,6 @@ function Projects() {
       <div className="project-grid">
 
         {/* Första 3 projekten – alltid synliga */}
-
-
            <a
       href="https://github.com/Baat00l/TDD-TicketBooking"
       target="_blank"
@@ -33,7 +31,6 @@ function Projects() {
       <h3>TDD TicketBooking – C#</h3>
       <p>Backend, logik och testdriven utveckling.</p>
     </a>
-
 
 <a
   href="https://github.com/Baat00l/Laboration-7-Angular"

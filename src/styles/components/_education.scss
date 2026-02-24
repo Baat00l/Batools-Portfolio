@@ -19,8 +19,8 @@
 .education-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 35px;   // mer luft mellan korten
-  padding-top: 30px; // lägger extra luft ovanför korten
+  gap: 35px;   
+  padding-top: 30px; 
 }
 
 /* ===========================
@@ -30,7 +30,7 @@
 .flip-card {
   background: transparent;
   width: 100%;
-  height: 210px;   // lite större för premium-känsla
+  height: 210px;   
   perspective: 1000px;
   cursor: pointer;
 }
@@ -60,7 +60,6 @@
 
   background: #2a2a2a;
 
-  /* FIX: transparent border för att undvika vit flash */
   border: 1px solid transparent;
 
   /* Grundskugga */
@@ -77,10 +76,10 @@
 .flip-card:hover .flip-front,
 .flip-card:hover .flip-back {
   box-shadow:
-    0 0 22px rgba(201,168,106,0.55),   // starkare guldig glow
-    0 35px 70px rgba(0,0,0,0.45);      // djup skugga
+    0 0 22px rgba(201,168,106,0.55),   
+    0 35px 70px rgba(0,0,0,0.45);      
 
-  border-color: rgba(201,168,106,0.55);  // guldig kant
+  border-color: rgba(201,168,106,0.55);  
 }
 
 /* FRONT */
@@ -115,7 +114,7 @@
   }
 
   .education-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 28px;
   }
 
@@ -138,7 +137,6 @@
     font-size: 14px;
   }
 }
-
 /* mobil */
 @media (max-width: 768px) {
   .education-title {
@@ -147,7 +145,7 @@
   }
 
   .education-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumner på mobil */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 24px;
     justify-items: center;
   }
@@ -170,5 +168,38 @@
   .flip-front p,
   .flip-back p {
     font-size: 13px;
+  }
+}
+
+/* extra liten mobil  */
+@media (max-width: 480px) {
+  .education-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+
+  .flip-card {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  .flip-front,
+  .flip-back {
+    padding: 16px;
+  }
+
+  .flip-front h4,
+  .flip-back h4 {
+    font-size: 15px;
+  }
+
+  .flip-front p,
+  .flip-back p {
+    font-size: 12px;
   }
 }

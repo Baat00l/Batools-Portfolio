@@ -27,7 +27,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-      padding-top: 70px;   // MINDRE avstånd ovanför rubriken
+      padding-top: 70px;   
 }
 
 .contact-form { max-width: 360px; }
@@ -127,21 +127,21 @@
 /* LINKEDIN + BOKA MÖTE – CENTRERAD PREMIUM VERSION */
 .social-link,
 .book-meeting {
-  display: block;               // Ligger under varandra
+  display: block;               
   margin-bottom: 12px;
   text-decoration: none;
   color: $accent-soft;
   position: relative;
   border-bottom: none !important;
   background: none !important;
-  text-align: center;           // ⭐ CENTRERAR texten
+  text-align: center;           
 
   /* Guld-underline animation */
   &::after {
     content: "";
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); // ⭐ Gör underline centrerad
+    transform: translateX(-50%); 
     bottom: 0;
     height: 2px;
     width: 0%;
@@ -226,7 +226,7 @@
   }
 
   .contact {
-    grid-template-columns: 1fr; /* 1 kolumn */
+    grid-template-columns: 1fr; 
     gap: 40px;
     text-align: center;
     justify-items: center;

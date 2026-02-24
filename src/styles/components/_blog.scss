@@ -19,7 +19,7 @@
 
 .blog-section .section-header {
   margin-top: 0;
-  margin-bottom: 40px; /* lämnar detta som mobil */
+  margin-bottom: 40px; 
 }
 
 
@@ -70,11 +70,6 @@
     color: $accent;
     font-size: 16px;
   }
-}
-
-/* REMOVE DOT COMPLETELY */
-.timeline-dot {
-  display: none;
 }
 
 
@@ -189,12 +184,13 @@
   }
 
   .timeline-date {
-    left: -60px; /* perfekt på mobil */
+    left: -60px; 
   }
 }
 
 @media (max-width: 480px) {
   .timeline-date {
-    left: -20px; /* perfekt på extra liten mobil */
+    left: -20px; 
   }
 }
+

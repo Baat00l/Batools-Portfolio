@@ -8,7 +8,7 @@
     padding: 80px 20px;
   }
 
-  /* Education fallback (din riktiga responsivitet ligger i education.scss) */
+  /* Education fallback  */
   .education-grid {
     grid-template-columns: 1fr;
   }
@@ -21,5 +21,19 @@
   /* Gallery */
   .gallery .project-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* Extra liten mobil */
+@media (max-width: 480px) {
+  .section {
+    padding: 60px 16px;
+  }
+
+  .education-grid,
+  .services .service-list,
+  .gallery .project-grid {
+    gap: 24px;
   }
 }

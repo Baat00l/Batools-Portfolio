@@ -6,9 +6,8 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 22px;
 
-    /* Guldig glow */
+  /* Guldig glow */
   box-shadow: 0 30px 70px rgba(253, 203, 0, 0.25);
-
 }
 
 .project-card {
@@ -23,5 +22,36 @@
   &:hover {
     transform: translateY(-6px);
     box-shadow: 0 25px 50px $shadow;
+  }
+}
+
+
+/* ===========================
+   RESPONSIVE – GALLERY
+=========================== */
+
+/* Tablet & Mobil (768px) */
+@media (max-width: 768px) {
+  .gallery .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 20px 18px;
+    border-radius: 16px;
+  }
+}
+
+/* Extra liten mobil (480px) */
+@media (max-width: 480px) {
+  .gallery .project-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-card {
+    padding: 18px 16px;
+    border-radius: 14px;
   }
 }

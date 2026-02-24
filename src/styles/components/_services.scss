@@ -35,7 +35,6 @@
   box-shadow: 0 20px 50px $shadow-soft;
   position: relative;
 
-  /* FIX: lägg till transparent border så den inte flashar vitt */
   border: 1px solid transparent;
 
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -48,7 +47,6 @@
       0 0 18px rgba(201,168,106,0.45),
       0 30px 60px rgba(0,0,0,0.45);
 
-    /* FIX: nu byter vi bara färg, ingen vit flash */
     border-color: rgba(201,168,106,0.55);
   }
 }
@@ -164,16 +162,16 @@
   }
 
   .service-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 22px;
-    justify-items: center; /* gör att tredje hamnar i mitten */
+    justify-items: center; 
   }
 
   .service-bubble {
     padding: 28px 20px;
     border-radius: 24px;
     width: 100%;
-    max-width: 260px; /* håller layouten snygg */
+    max-width: 260px; 
   }
 
   .service-bubble .icon {
@@ -203,7 +201,7 @@
 /* Extra liten mobil */
 @media (max-width: 480px) {
   .service-list {
-    grid-template-columns: 1fr; /* 1 kolumn */
+    grid-template-columns: 1fr; 
     justify-items: center;
   }
 

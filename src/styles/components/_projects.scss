@@ -108,7 +108,7 @@
 
 .project-photo {
   width: 100%;
-  aspect-ratio: 5 / 4;   // nästan fyrkantig, men lite bredare
+  aspect-ratio: 5 / 4;   
 }
 
 
@@ -156,16 +156,16 @@
   }
 
   .project-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolumner */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 22px;
-    justify-items: center; /* centrerar tredje kortet */
+    justify-items: center; 
   }
 
   .project-card {
     padding: 28px 20px;
     border-radius: 24px;
     width: 100%;
-    max-width: 260px; /* håller layouten snygg */
+    max-width: 260px; 
   }
 
   .project-card h3 {
@@ -190,7 +190,7 @@
 /* Extra liten mobil */
 @media (max-width: 480px) {
   .project-grid {
-    grid-template-columns: 1fr; /* 1 kolumn */
+    grid-template-columns: 1fr; 
     justify-items: center;
   }
 
@@ -204,6 +204,6 @@
   }
 
   .project-photo {
-    aspect-ratio: 4 / 3; /* lite högre för små skärmar */
+    aspect-ratio: 4 / 3; 
   }
 }

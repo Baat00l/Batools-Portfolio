@@ -16,3 +16,22 @@ body {
 main {
   padding-top: 90px;
 }
+
+
+/* ===========================
+   RESPONSIVE – GLOBAL
+=========================== */
+
+/* Tablet & Mobil (768px) */
+@media (max-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
+}
+
+/* Extra liten mobil (480px) */
+@media (max-width: 480px) {
+  main {
+    padding-top: 60px;
+  }
+}
