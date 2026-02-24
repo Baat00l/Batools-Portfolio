@@ -232,18 +232,53 @@ padding: 50px 8vw 100px;
   .social-row {
     gap: 24px;
   }
-}
-
-/* Mobil */
+}/* Mobil */
 @media (max-width: 768px) {
   .home {
     padding: 0 5vw 50px;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* flyttar upp innehållet */
     align-items: center;
     flex-direction: column;
+    padding-top: 80px; /* snyggt avstånd uppåt */
     border-radius: 28px;
+    position: relative;
+
+    /* STARKARE SOL-LIKNANDE GLOW FRÅN HÖRNEN */
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25%;
+      left: -25%;
+      width: 70%;
+      height: 70%;
+      background: radial-gradient(
+        circle,
+        rgba(253, 203, 0, 0.45) 0%,   /* starkare guld */
+        rgba(253, 203, 0, 0.15) 40%, /* mjuk övergång */
+        rgba(253, 203, 0, 0) 80%
+      );
+      filter: blur(55px);
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25%;
+      right: -25%;
+      width: 70%;
+      height: 70%;
+      background: radial-gradient(
+        circle,
+        rgba(253, 203, 0, 0.40) 0%,   /* starkare guld */
+        rgba(253, 203, 0, 0.12) 40%,
+        rgba(253, 203, 0, 0) 80%
+      );
+      filter: blur(60px);
+      pointer-events: none;
+    }
   }
 
   .home-inner {

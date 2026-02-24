@@ -139,7 +139,7 @@
   }
 }
 
-/* Mobil */
+/* mobil */
 @media (max-width: 768px) {
   .education-title {
     font-size: 30px;
@@ -147,7 +147,7 @@
   }
 
   .education-grid {
-    grid-template-columns: 1fr; /* 1 kolumn */
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumner på mobil */
     gap: 24px;
     justify-items: center;
   }
@@ -170,33 +170,5 @@
   .flip-front p,
   .flip-back p {
     font-size: 13px;
-  }
-}
-
-/* Extra liten mobil */
-@media (max-width: 480px) {
-  .education-title {
-    font-size: 26px;
-    margin-bottom: 40px;
-  }
-
-  .flip-card {
-    max-width: 280px;
-    height: 180px;
-  }
-
-  .flip-front,
-  .flip-back {
-    padding: 16px;
-  }
-
-  .flip-front h4,
-  .flip-back h4 {
-    font-size: 15px;
-  }
-
-  .flip-front p,
-  .flip-back p {
-    font-size: 12px;
   }
 }
