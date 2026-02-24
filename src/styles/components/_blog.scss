@@ -3,28 +3,25 @@
 =========================== */
 
 .blog-section {
+  width: 100%;
   scroll-margin-top: 0px;
 
-  /* Justera avstånd här */
-padding: 10px 8vw 40px;
+  /* SUPER TIGHT TOP */
+  padding: 10px 8vw 70px;
 
   background: linear-gradient(135deg, #1c1c1c, #141414);
   border-radius: 32px;
-  box-shadow: 0 30px 70px $shadow;
+  box-shadow: 0 30px 70px rgba(253, 203, 0, 0.25);
+
   position: relative;
   overflow: hidden;
-
-  
-  /* Guldig glow */
-  box-shadow: 0 30px 70px rgba(253, 203, 0, 0.25);
 }
-
-
 
 .blog-section .section-header {
-  text-align: center;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 40px; /* lämnar detta som mobil */
 }
+
 
 /* Timeline container */
 .timeline {
@@ -60,7 +57,7 @@ padding: 10px 8vw 40px;
 /* DATE + ICON */
 .timeline-date {
   position: absolute;
-  left: -70px;
+  left: -40px; 
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
@@ -75,27 +72,11 @@ padding: 10px 8vw 40px;
   }
 }
 
-/* Dot centered on the block */
+/* REMOVE DOT COMPLETELY */
 .timeline-dot {
-  width: 18px;
-  height: 18px;
-  background: $accent;
-  border-radius: 50%;
-  position: absolute;
-  left: -3px;
-  top: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0 0 12px rgba(201,168,106,0.7);
-  z-index: 3;
-  animation: pulse 2s infinite ease-in-out;
+  display: none;
 }
 
-/* Pulse animation */
-@keyframes pulse {
-  0% { box-shadow: 0 0 8px rgba(201,168,106,0.4); }
-  50% { box-shadow: 0 0 18px rgba(201,168,106,0.9); }
-  100% { box-shadow: 0 0 8px rgba(201,168,106,0.4); }
-}
 
 /* Content block */
 .timeline-content {
@@ -183,31 +164,37 @@ padding: 10px 8vw 40px;
   to { opacity: 1; transform: translateY(0); }
 }
 
+
 /* ===========================
-   RESPONSIVE FIX – TIMELINE DATE
+   RESPONSIVE – BLOG (MATCHAR PROJECTS)
 =========================== */
 
-/* Mobil */
 @media (max-width: 768px) {
-  .timeline-date {
-    left: -45px;        /* närmare linjen */
-    font-size: 12px;    /* mindre text */
-    opacity: 0.85;
+  .blog-section {
+    padding: 40px 5vw 70px !important;
+    border-radius: 28px;
   }
 
-  .timeline-date i {
-    font-size: 14px;    /* mindre ikon */
+  .blog-section .section-header {
+    margin-top: 0 !important;
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    margin-top: -10px;
+  }
+
+  .timeline::before {
+    top: -10px;
+  }
+
+  .timeline-date {
+    left: -40px; /* perfekt på mobil */
   }
 }
 
-/* Extra liten mobil */
 @media (max-width: 480px) {
   .timeline-date {
-    left: -38px;        /* ännu närmare */
-    font-size: 11px;    /* ännu lite mindre */
-  }
-
-  .timeline-date i {
-    font-size: 13px;
+    left: -20px; /* perfekt på extra liten mobil */
   }
 }
