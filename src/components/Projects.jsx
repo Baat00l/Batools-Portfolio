@@ -32,17 +32,17 @@ function Projects() {
       <p>Backend, logik och testdriven utveckling.</p>
     </a>
 
-<a
-  href="https://github.com/Baat00l/Laboration-7-Angular"
-  target="_blank"
-  className="project-card angular"
->
-  <div className="project-photo">
-    <img src={angularImg} alt="Angular projekt" />
-  </div>
-  <h3>Angular</h3>
-  <p>Stort ramverk, TypeScript och struktur.</p>
-</a>
+   <a
+      href="https://github.com/Baat00l/Movie-seat-booking-Javascript"
+      target="_blank"
+      className="project-card movie extra-project fade-in"
+    >
+      <div className="project-photo">
+        <img src={movieImg} alt="Movie Seat Booking" />
+      </div>
+      <h3>Movie Seat Booking – JS</h3>
+      <p>Interaktivt UI och visuellt projekt.</p>
+    </a>
 
 <a
   href="https://github.com/Baat00l/Laboration-4-Databas"
@@ -72,17 +72,19 @@ function Projects() {
   <p>Modern frontend, komponenter och UI‑tänk.</p>
 </a>
 
+
+
     <a
-      href="https://github.com/Baat00l/Movie-seat-booking-Javascript"
-      target="_blank"
-      className="project-card movie extra-project fade-in"
-    >
-      <div className="project-photo">
-        <img src={movieImg} alt="Movie Seat Booking" />
-      </div>
-      <h3>Movie Seat Booking – JS</h3>
-      <p>Interaktivt UI och visuellt projekt.</p>
-    </a>
+  href="https://github.com/Baat00l/Laboration-7-Angular"
+  target="_blank"
+  className="project-card angular"
+>
+  <div className="project-photo">
+    <img src={angularImg} alt="Angular projekt" />
+  </div>
+  <h3>Angular</h3>
+  <p>Stort ramverk, TypeScript och struktur.</p>
+</a>
 
     <a
       href="https://github.com/Baat00l/Js2-Laboration-3-APIer"
