@@ -164,7 +164,7 @@ Detta projekt har stärkt min självkänsla som webbutvecklare och gett mig en p
 git clone https://github.com/Baat00l/Batools-Portfolio.git
 
 2. Öppna projektet i VS Code
-cd Batools-Portfolio
+cd "Batools Portfolio"
 code .
 
 3. Installera dependencies
