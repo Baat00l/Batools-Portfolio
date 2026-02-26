@@ -7,8 +7,8 @@ Målet är att skapa en professionell, genomarbetad och visuellt stark portfolio
 ---
 
 ## 🔗 Live Demo  
-*(Publiceras på Netlify)*  
-https://batoolsportfolio.netlify.app/
+*(Publiceras på Vercel)*  
+https://batools-portfolio.vercel.app/
 ---
 
 # 🎯 Syfte  
