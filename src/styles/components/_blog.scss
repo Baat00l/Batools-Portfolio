@@ -161,9 +161,10 @@
 
 
 /* ===========================
-   RESPONSIVE – BLOG (MATCHAR PROJECTS)
+   RESPONSIVE – BLOG 
 =========================== */
 
+/* Mobil */
 @media (max-width: 768px) {
   .blog-section {
     padding: 40px 5vw 70px !important;
@@ -175,22 +176,56 @@
     margin-bottom: 40px;
   }
 
+  /* Timeline behåller linjen till vänster */
   .timeline {
     margin-top: -10px;
+    position: relative;
   }
 
   .timeline::before {
     top: -10px;
+    left: 0; /* linjen kvar till vänster */
   }
 
+  /* Varje kort ligger i sin egen rad och centrerat */
+  .timeline-item {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 50px auto; 
+  }
+
+  /* Datumet ovanpå kortet */
   .timeline-date {
-    left: -60px; 
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 2;
+  }
+
+  /* Pricken centrerad i höjd med kortet */
+  .timeline-dot {
+    position: absolute;
+    left: -12px; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
   }
 }
 
+/* Extra liten mobil */
 @media (max-width: 480px) {
+  .timeline-item {
+    max-width: 300px;
+  }
+
   .timeline-date {
-    left: -20px; 
+    top: -26px; 
+  }
+
+  .timeline-dot {
+    left: -10px; 
   }
 }
-
