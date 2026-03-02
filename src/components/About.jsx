@@ -75,7 +75,7 @@ En nyfiken och målmedveten person som älskar att utvecklas,
       {/* EDUCATION HEADER */}
       <div className="section-header" style={{ marginTop: "90px" }}>
         <p className="eyebrow">Utbildning</p>
-        <h2>Min utbildningsbakgrund</h2>
+        <h2>Studier och kvalifikationer</h2>
       </div>
 
       {/* EDUCATION GRID */}
@@ -101,7 +101,7 @@ En nyfiken och målmedveten person som älskar att utvecklas,
           <div className="flip-inner">
             <div className="flip-front">
               <span className="edu-date">2020 - 2023</span>
-              <h4>Thoren Business School</h4>
+              <h4>Thorén Business School</h4>
               <p>Naturvetenskap</p>
             </div>
             <div className="flip-back">
