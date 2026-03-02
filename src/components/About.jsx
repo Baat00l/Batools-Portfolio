@@ -10,7 +10,7 @@ function About() {
       {/* ABOUT HEADER */}
       <div className="section-header">
         <p className="eyebrow">Om mig</p>
-        <h2>Vem jag är bakom koden</h2>
+        <h2>Från passion till profession</h2>
       </div>
 
       {/* ABOUT GRID */}
