@@ -22,7 +22,7 @@ function Blog() {
     <section id="blog" ref={sectionRef} className="section fade-section blog-section">
       <div className="section-header" style={{ marginTop: "60px" }}>
         <p className="eyebrow">Reflektioner</p>
-        <h2>Människan bakom utvecklaren</h2>
+        <h2>Människan bakom designen & koden</h2>
       </div>
 
       <div className="timeline">
