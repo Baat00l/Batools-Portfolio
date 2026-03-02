@@ -3,7 +3,7 @@ function Skills() {
     <section id="skills" className="section skills-section fade-section">
       <div className="section-header">
         <p className="eyebrow">Kompetenser</p>
-        <h2>Mina styrkor & färdigheter</h2>
+        <h2>Färdigheter & expertis</h2>
       </div>
 
       <div className="skills-bubbles">
