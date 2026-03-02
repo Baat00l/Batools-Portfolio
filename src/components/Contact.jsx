@@ -35,8 +35,24 @@ function Contact() {
 
         <div className="contact-details">
           <p><span className="icon">👤</span><strong>Namn:</strong> Batool Fahmi</p>
-          <p><span className="icon">📍</span><strong>Plats:</strong> Örebro, Sverige</p>
-          <p><span className="icon">📞</span><strong>Mobil:</strong> (+46) 739 098 804</p>
+       <p>
+  <span className="icon">📍</span>
+  <strong>Plats:</strong>
+  <a 
+    href="https://maps.google.com/?q=Örebro%2C+Sverige" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Örebro, Sverige
+  </a>
+</p>
+
+<p>
+  <span className="icon">📞</span>
+  <strong>Mobil:</strong>
+  <a href="tel:+46739098804">(+46) 739 098 804</a>
+</p>
+
           <p><span className="icon">✉️</span><strong>E‑post:</strong> <a href="mailto:batoolfahmi4@gmail.com">batoolfahmi4@gmail.com</a></p>
         </div>
 

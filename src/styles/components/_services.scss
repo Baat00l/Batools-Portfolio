@@ -27,29 +27,29 @@
   margin-top: 60px;
 
 }
+
 .service-bubble {
-  background: $bg-soft;
+  background: rgba(255,255,255,0.06); /* samma som BLOG */
+  border: 1px solid rgba(255,255,255,0.12); /* samma som BLOG */
+  backdrop-filter: blur(10px); /* samma som BLOG */
+
   padding: 40px 28px;
   border-radius: 28px;
   text-align: center;
   box-shadow: 0 20px 50px $shadow-soft;
   position: relative;
 
-  border: 1px solid transparent;
-
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 
   &:hover {
     transform: translateY(-8px);
-
-    /* Premium glow runt hela blocket */
     box-shadow:
       0 0 18px rgba(201,168,106,0.45),
       0 30px 60px rgba(0,0,0,0.45);
-
     border-color: rgba(201,168,106,0.55);
   }
 }
+
 
 /* Ikonbubbla */
 .service-bubble .icon {

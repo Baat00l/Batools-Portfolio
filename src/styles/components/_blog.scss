@@ -159,7 +159,6 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-
 /* ===========================
    RESPONSIVE – BLOG 
 =========================== */
@@ -176,42 +175,40 @@
     margin-bottom: 40px;
   }
 
-  /* Timeline behåller linjen till vänster */
+  /* Ta bort linjen helt */
+  .timeline::before {
+    display: none !important;
+  }
+
+
+  /* Centrera hela timeline-blocket */
   .timeline {
     margin-top: -10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centrerar allt */
+    padding-left: 0; /* ta bort desktop-offset */
   }
 
-  .timeline::before {
-    top: -10px;
-    left: 0; /* linjen kvar till vänster */
-  }
-
-  /* Varje kort ligger i sin egen rad och centrerat */
+  /* Korten helt centrerade */
   .timeline-item {
     position: relative;
     width: 100%;
     max-width: 340px;
-    margin: 0 auto 50px auto; 
+    margin: 50px auto;
+    padding-left: 0; /* ta bort desktop-padding */
+    text-align: center;
   }
 
-  /* Datumet ovanpå kortet */
+  /* Datumet kvar exakt som det är, bara centrerat */
   .timeline-date {
     position: absolute;
-    top: -30px; 
+    top: -38px;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0;
-    z-index: 2;
-  }
-
-  /* Pricken centrerad i höjd med kortet */
-  .timeline-dot {
-    position: absolute;
-    left: -12px; 
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 3;
+    text-align: center;
   }
 }
 
@@ -222,10 +219,6 @@
   }
 
   .timeline-date {
-    top: -26px; 
-  }
-
-  .timeline-dot {
-    left: -10px; 
+    top: -34px;
   }
 }
