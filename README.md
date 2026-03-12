@@ -154,6 +154,20 @@ Detta projekt har stärkt min självkänsla som webbutvecklare och gett mig en p
 
 ---
 
+## 🧑‍💻 Om mig
+
+Jag är en frontend‑utvecklare med fokus på design, användarupplevelse och moderna webblösningar. Min styrka ligger i att kombinera visuellt uttryck med teknisk struktur — och skapa digitala upplevelser som känns både professionella och personliga.
+
+---
+
+## 📬 Kontakt
+
+- **Portfolio:** https://batools-portfolio.vercel.app  
+- **LinkedIn:** https://linkedin.com/in/batool  
+- **E‑post:** batool@example.com
+
+---
+
 # 🧪 Installation & körning (lokalt)
 
 ### **1. Klona repot**
