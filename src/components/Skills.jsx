@@ -1,30 +1,73 @@
 function Skills() {
+  const categories = [
+    {
+      title: "Tekniska kompetenser",
+      icon: "💻",
+      items: [
+        "HTML",
+        "CSS / SASS",
+        "JavaScript",
+        "Next.js",
+        "C#",
+        "Design & UX",
+        "Programmering",
+        "Responsiv design",
+        "GitHub",
+        "Komponentbaserad utveckling"
+
+      ]
+    },
+    {
+      title: "Arbetssätt & verktyg",
+      icon: "🛠️",
+      items: [
+        "Agila metoder",
+        "Publiceringsverktyg",
+        "Planeringsförmåga",
+        "Kommunikation",
+        "Strukturerat arbetssätt"
+      ]
+    },
+{
+  title: "Personliga styrkor",
+  icon: "🌿",
+  items: [
+    "Empatisk",
+    "Ambitiös",
+    "Ansvarsfull",
+    "Samarbetsinriktad",
+    "Anpassningsbar",
+    "Tålmodig",
+    "Organiserad",
+    "Driven",
+        "Noggrann",
+    "Pålitlig",
+  ]
+}
+  ];
+
   return (
-    <section id="skills" className="section skills-section fade-section">
+    <section id="skills" className="skills-section fade-section">
       <div className="section-header">
         <p className="eyebrow">Kompetenser</p>
         <h2>Färdigheter & expertis</h2>
       </div>
 
-      <div className="skills-bubbles">
-    <span class="bubble">HTML</span>
-    <span class="bubble">CSS / SASS</span>
-    <span class="bubble">JavaScript</span>
-    <span class="bubble">Grundläggande & fördjupad programmering</span>
-    <span class="bubble">Design & UX</span>
-    <span class="bubble">Next.js</span>
-    <span class="bubble">C#</span>
-    <span class="bubble">Agila metoder</span>
-    <span class="bubble">Publiceringsverktyg</span>
-    <span class="bubble">Github</span>
-    <span class="bubble">Anpassningsförmåga</span>
-    <span class="bubble">Empati</span>
-    <span class="bubble">Planeringsförmåga</span>
-    <span class="bubble">Kommunikation</span>
-    <span class="bubble">Samarbete</span>
-    <span class="bubble">Flexibilitet</span>
-    <span class="bubble">Tålamod</span>
-    <span class="bubble">Aktivitetsplanering</span>
+      <div className="skills-grid">
+        {categories.map((cat) => (
+          <div className="skills-card" key={cat.title}>
+            <h3 className="skills-card-title">
+              <span className="icon">{cat.icon}</span>
+              {cat.title}
+            </h3>
+
+            <div className="skills-chips">
+              {cat.items.map((item) => (
+                <span className="chip" key={item}>{item}</span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
