@@ -156,15 +156,15 @@ Detta projekt har stärkt min självkänsla som webbutvecklare och gett mig en p
 
 ## 🧑‍💻 Om mig
 
-Jag är en frontend‑utvecklare med fokus på design, användarupplevelse och moderna webblösningar. Min styrka ligger i att kombinera visuellt uttryck med teknisk struktur — och skapa digitala upplevelser som känns både professionella och personliga.
+Jag studerar webbutveckling och har ett särskilt intresse för frontend, där jag trivs bäst med att arbeta med design, interaktivitet och användarupplevelse. Jag gillar att kombinera visuellt uttryck med tydlig teknisk struktur och skapa digitala upplevelser som känns både professionella och personliga.
 
 ---
 
 ## 📬 Kontakt
 
-- **Portfolio:** https://batools-portfolio.vercel.app  
-- **LinkedIn:** https://linkedin.com/in/batool  
-- **E‑post:** batool@example.com
+- **Portfolio:** https://batoolsportfolio.vercel.app/
+- **LinkedIn:** https://www.linkedin.com/in/batoolfahmi/
+- **E‑post:** batoolfahmi@gmail.com
 
 ---
 
