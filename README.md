@@ -160,14 +160,6 @@ Jag studerar webbutveckling och har ett särskilt intresse för frontend, där j
 
 ---
 
-## 📬 Kontakt
-
-- **Portfolio:** https://batoolsportfolio.vercel.app/
-- **LinkedIn:** https://www.linkedin.com/in/batoolfahmi/
-- **E‑post:** batoolfahmi@gmail.com
-
----
-
 # 🧪 Installation & körning (lokalt)
 
 ### **1. Klona repot**
