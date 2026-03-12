@@ -66,6 +66,29 @@ Syftet med projektet är att utveckla en **personlig och professionell portfolio
 
 ---
 
+## 🧩 Motivering av tekniska val
+Valen av teknik och struktur i projektet är gjorda för att skapa en modern, snabb och skalbar portfolio som är enkel att underhålla och vidareutveckla.
+
+### **React**  
+React valdes för att arbeta komponentbaserat och skapa en tydlig, återanvändbar struktur. Det gör det enkelt att bygga interaktiva sektioner och hålla koden organiserad.
+
+### **Vite**  
+Vite används för dess snabba utvecklingsmiljö, moderna build‑pipeline och minimala konfiguration. Det ger korta laddningstider och en smidig utvecklingsprocess.
+
+### **SCSS**  
+SCSS valdes för att kunna arbeta med variabler, partials och modulär styling. Det gör designen mer skalbar, konsekvent och lättare att underhålla än vanlig CSS.
+
+### **JavaScript (ES6+)**  
+JavaScript används för logik, scroll‑funktioner, observers och interaktivitet. ES6‑syntax ger renare och mer strukturerad kod.
+
+### **Designval**  
+Färgtemat (soft‑gold + mörk premiumdesign), typografin (Poppins) och animationerna valdes för att skapa en visuell identitet som känns modern, personlig och professionell. Fokus ligger på att kombinera estetik med användarvänlighet.
+
+### **Projektstruktur**  
+Strukturen med separata mappar för komponenter, sektioner, assets och SCSS‑partials gör projektet lätt att navigera och vidareutveckla. Det speglar hur moderna frontend‑projekt organiseras i arbetslivet.
+
+--- 
+
 ## 📂 Projektstruktur
 
 /public → statiska filer (PDF, bilder) 
